@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teams Caption Recorder — Save Microsoft Teams Live Captions Locally</title>
+<meta name="description" content="Save Microsoft Teams live captions as private transcripts in Chrome. Automatic caption enablement, speaker labels, local storage, and TXT, Markdown, JSON, WebVTT exports.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://polygoku.github.io/teams-caption-recorder/">
+<meta property="og:type" content="website"><meta property="og:title" content="Teams Caption Recorder — Your meeting captions, saved privately">
+<meta property="og:description" content="A silent, independent Chrome extension for locally saving Microsoft Teams live captions with timestamps and speaker labels.">
+<meta property="og:image" content="https://polygoku.github.io/teams-caption-recorder/assets/og.png">
+<meta property="og:url" content="https://polygoku.github.io/teams-caption-recorder/">
+<link rel="icon" type="image/png" href="assets/icon-128.png"><link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Teams Caption Recorder - Local Notes","applicationCategory":"ProductivityApplication","operatingSystem":"Google Chrome, Microsoft Edge","softwareVersion":"0.3.0","description":"A silent browser extension that saves Microsoft Teams web live captions locally as searchable transcripts, with speaker names and export formats.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Person","name":"polygoku"},"url":"https://polygoku.github.io/teams-caption-recorder/","isAccessibleForFree":true}
+</script>
+</head>
+<body>
+<nav><div class="inner"><a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="38" height="38">Teams Caption Recorder</a><div class="links"><a href="#features">Features</a><a href="#setup">Get started</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></div></nav>
+<main>
+<section class="hero"><div class="container split"><div>
+<span class="eyebrow">Private meeting transcript extension for Chrome</span>
+<h1>Your Teams live captions, saved. <span style="color:#098175">Nothing announced.</span></h1>
+<p class="lead">Capture the captions Microsoft Teams shows during browser meetings. Automatically enable live captions after opt-in, save the transcript when you leave, and export it when you need notes.</p>
+<div class="buttons"><a class="btn primary" href="https://chromewebstore.google.com/" id="chrome-web-store-link">Find in Chrome Web Store</a><a class="btn secondary" href="#setup">How it works</a></div>
+<p class="muted">Free · No account · No microphone recording · No developer cloud storage · Independent of Microsoft</p>
+</div>
+<div class="panel" role="img" aria-label="Illustrative example of a transcript with two speakers and timestamps. This is example text, not a real meeting.">
+<div class="mockstatus"><strong>Meeting transcript</strong><span class="pill">Saved locally</span></div>
+<div class="message"><span class="timestamp">10:02 AM</span><div class="speaker">Alex Morgan</div><p>Let's confirm the requirements before the next milestone.</p></div>
+<div class="message"><span class="timestamp">10:03 AM</span><div class="speaker">Casey Lin</div><p>I'll update the action tracker and send the revised list.</p></div>
+<div class="message"><span class="timestamp">10:05 AM</span><div class="speaker">Alex Morgan</div><p>Sounds good. We'll review the changes on Friday.</p></div>
+<p class="muted">Illustrative sample — actual text comes only from live Teams captions.</p>
+</div></div></section>
+<section id="features" class="section"><div class="container"><span class="eyebrow">Focused on one job</span><h2>Capture captions. Keep control.</h2>
+<div class="cards">
+<div class="card"><b>Automatic live captions</b><p>After your one-time opt-in, the extension recognizes a Teams browser meeting and tries to enable Teams' native live captions.</p></div>
+<div class="card"><b>Quiet, invisible operation</b><p>No speech output, alerts, or recorder banners inside meetings. The extension doesn't turn on your microphone or create Teams recordings.</p></div>
+<div class="card"><b>Auto-save after hang-up</b><p>When a meeting ends, the extension finalizes the captured captions automatically and keeps the transcript on your device.</p></div>
+<div class="card"><b>Searchable meeting notebook</b><p>Review saved transcripts by meeting title, speaker, and timestamp. Rename or delete entries when you choose.</p></div>
+<div class="card"><b>Export your own records</b><p>Download local transcript text in TXT, Markdown, JSON, or WebVTT. Exports happen only when you click.</p></div>
+<div class="card"><b>Private by design</b><p>Meeting text stays in your browser's local IndexedDB. No developer API, analytics, account, or automatic upload.</p></div>
+</div></div></section>
+<section id="setup" class="section" style="background:#edf6f4"><div class="container"><span class="eyebrow">Simple first-run instructions</span><h2>How to save Microsoft Teams captions</h2>
+<ol class="steps">
+<li><strong>Install Teams Caption Recorder.</strong> Add the browser extension from the Chrome Web Store. Open its one-time setup page.</li>
+<li><strong>Choose consent.</strong> Read the privacy summary and click <em>Enable automatic captions and saving</em>. Automatic capture stays OFF until you opt in.</li>
+<li><strong>Join a Teams meeting in Chrome or Edge.</strong> Use the web version at teams.microsoft.com or teams.cloud.microsoft. The native Teams desktop app is not supported.</li>
+<li><strong>Keep the meeting natural.</strong> The extension quietly tries to enable Teams live captions and captures available caption text. You won't hear an announcement from the extension.</li>
+<li><strong>Leave and export.</strong> Hang up normally. The transcript finishes and stays saved in your browser. Click the extension icon → <em>Open saved transcripts</em> → export TXT, MD, JSON, or WebVTT.</li>
+</ol><p class="muted">Teams creates the live captions; this tool does not perform speech recognition. It cannot recover speech from before captions were turned on. Follow meeting-consent rules before capturing participants' words.</p></div></section>
+<section class="section"><div class="container faq"><span class="eyebrow">Answers before you install</span><h2>Frequently asked questions</h2>
+<article><h3>Does this extension record meeting audio?</h3><p>No. It reads the text already displayed by Microsoft Teams' live captions. It does not access microphone audio, generate speech, or start a native Teams recording.</p></article>
+<article><h3>Will participants see a recording announcement?</h3><p>The extension adds no audio or text announcements to the meeting. Teams may still show its own caption interface or system notifications. Always follow your organization's rules and applicable law.</p></article>
+<article><h3>Can I retrieve captions from an older Teams meeting?</h3><p>No. It only captures text rendered in a supported Teams browser meeting while the extension is enabled. It is not a historical transcript downloader.</p></article>
+<article><h3>Where are transcripts stored?</h3><p>Locally in the browser profile's IndexedDB. Nothing is automatically uploaded to the developer. You can export transcripts manually, delete individual records, or clear all extension storage.</p></article>
+<article><h3>Does it work with the Teams desktop application?</h3><p>No. Use Microsoft Teams in Chrome or Edge. Captions are only captured when Teams renders them in a supported web page.</p></article>
+<article><h3>Who publishes this?</h3><p>Teams Caption Recorder is an independent project, not affiliated with, endorsed by, or operated by Microsoft.</p></article>
+</div></section>
+<section class="section" style="background:#eaf6f3"><div class="container split"><div><span class="eyebrow">Support and transparency</span><h2>Know exactly what the extension stores.</h2><p>Our privacy policy explains the locally collected meeting data, storage, retention, user exports, and deletion. The troubleshooting guide and privacy policy are public.</p><div class="buttons"><a class="btn primary" href="privacy.html">Read privacy policy</a><a class="btn secondary" href="support.html">See support guide</a></div></div><div class="panel"><h3>Data handling in one glance</h3><p>✓ Meeting caption text and speaker labels: local only</p><p>✓ Session dates and titles: local only</p><p>✓ Settings: Chrome extension storage</p><p>✓ Exports: initiated by you</p><p>✕ No automatic network transfer of transcripts</p><p>✕ No analytics, advertising, or data resale</p></div></div></section>
+</main>
+<footer><div class="container"><span>© 2026 polygoku. Independent third-party project, not affiliated with Microsoft. Microsoft Teams is a trademark of Microsoft Corporation.</span><span><a href="privacy.html">Privacy</a> · <a href="support.html">Help</a> · <a href="https://github.com/polygoku/teams-caption-recorder">GitHub project</a></span></div></footer>
+</body></html>

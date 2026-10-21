@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Use Teams Caption Recorder — Install, Save, Export & Troubleshoot</title>
+<meta name="description" content="Step-by-step setup for saving Microsoft Teams live captions in Chrome. Learn automatic caption capture, transcript export, speaker labels, data deletion, and troubleshooting.">
+<link rel="canonical" href="https://polygoku.github.io/teams-caption-recorder/support.html">
+<link rel="icon" href="assets/icon-128.png" type="image/png"><link rel="stylesheet" href="site.css"></head>
+<body><nav><div class="inner"><a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="38" height="38">Teams Caption Recorder</a><div class="links"><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div></div></nav>
+<main class="container plain">
+<span class="eyebrow">Quick start and troubleshooting</span><h1>How to use Teams Caption Recorder</h1>
+<p class="lead">A concise guide to automatically saving <strong>Microsoft Teams live captions</strong> as private browser transcripts. This extension works with the web version of Teams and never outputs audio.</p>
+<div class="notice"><p><strong>Before you start:</strong> Confirm you have permission to retain meeting captions. The extension reads real participants' words; use it in accordance with meeting rules, your workplace policies, and applicable law.</p></div>
+<h2>First-time installation</h2>
+<ol>
+<li>Install <strong>Teams Caption Recorder – Local Notes</strong> from the Chrome Web Store in Google Chrome (or a compatible Chromium browser, such as Edge).</li>
+<li>Read the automatically opened setup page. Choose <strong>Enable automatic captions and saving</strong> to opt in. If you choose <strong>Not now</strong>, automatic recording remains disabled.</li>
+<li>Optional: pin the extension from Chrome’s Extensions puzzle-piece menu. The pinned toolbar icon opens the private status and transcript controls.</li>
+<li>Navigate to <a href="https://teams.microsoft.com/" target="_blank" rel="noopener noreferrer">teams.microsoft.com</a> or teams.cloud.microsoft and sign in to your usual account. Join a meeting through the browser, not the Teams desktop application.</li>
+<li>After you enter the live call, the extension silently tries to turn on Teams’ <strong>Live Captions</strong>. It captures only captions that Teams displays while the session is active.</li>
+<li>At the end, click Teams’ normal <strong>Leave</strong> button. The extension finishes saving automatically. Open its toolbar popup → <strong>Open saved transcripts</strong> to find the saved meeting and export it.</li>
+</ol>
+<h2>When you want to record only some meetings</h2>
+<p>Click the extension icon and turn off <strong>Start when a meeting is detected</strong>. You can then manually use <strong>Start capture</strong> after joining a meeting. Use <strong>Pause</strong> during a call if you want to exclude later caption updates, and <strong>Resume</strong> to continue. <strong>Finish</strong> permanently closes that session.</p>
+<h2>What gets saved</h2>
+<p>Each record contains a meeting title, approximate caption-observation timestamps, the speaker label Teams displays (when available), and text revisions from the native caption pane. These timestamps are not sample-accurate audio timecodes. Previously unheard or unrendered speech cannot be reconstructed. The extension never reads meeting chat messages for its transcript.</p>
+<h2>How to export and delete transcripts</h2>
+<ol>
+<li>Click the extension toolbar icon and choose <strong>Open saved transcripts</strong>.</li>
+<li>Select the meeting in the left-hand list. Rename it using the title control if desired.</li>
+<li>Use <strong>Export</strong> to choose TXT for plain text, Markdown for notes, JSON for structured data, or WebVTT for captions/subtitles.</li>
+<li>Delete a completed transcript from the library if you no longer need it. For wholesale removal, clear the extension’s data or uninstall it; this cannot be undone without a separate export.</li>
+</ol>
+<h2>Troubleshooting</h2>
+<div class="faq">
+<article><h3>Captions didn't turn on automatically</h3><p>Make sure you have joined the call and <strong>Automatically turn on captions</strong> is enabled in the toolbar popup. Use <strong>Retry live captions</strong> if necessary. In Teams, the usual manual path is <strong>More → Language and speech → Show live captions</strong>. Some releases show a direct <strong>Captions</strong> item instead. English-language Teams menus are best supported.</p></article>
+<article><h3>The transcript still shows zero entries</h3><p>Check that Teams is showing actual live speech text. Opening the caption pane while nobody talks may legitimately yield zero entries. Speak an ordinary test sentence in a meeting you control and verify it appears in Teams’ native caption area. The extension cannot create captions itself.</p></article>
+<article><h3>The extension doesn't detect the meeting</h3><p>Use the Teams browser experience rather than the native desktop application. Verify the extension has site access for the Teams domain and reload an already-open Teams tab after installing or updating. Government or specialized sovereign-cloud URLs may not be supported.</p></article>
+<article><h3>Will it announce recording, play audio, or show an overlay?</h3><p>No. There are no audio-output APIs, announcements, or banners created by the extension. Teams may still display its own built-in status messages or caption panel.</p></article>
+<article><h3>My meeting ended, but I don't see it</h3><p>Allow several seconds after Leave for pending local writes to finish, then reopen the local library. If Teams or the browser crashed, the session may be marked <strong>Interrupted</strong>. Any captions already written to local storage should remain available, but the unacknowledged final update can be lost.</p></article>
+<article><h3>I removed the extension. Where did my records go?</h3><p>Transcripts live in the browser’s extension-specific local IndexedDB. Uninstalling, resetting the browser profile, or clearing extension storage may permanently delete them. Use export before removal or reinstalling.</p></article>
+<article><h3>Is this an official Microsoft product?</h3><p>No. This extension is independently developed and is not endorsed by or affiliated with Microsoft. It interacts with the Teams web interface, which may change over time.</p></article>
+</div>
+<h2>Privacy, permissions, and support</h2>
+<p>We request extension storage and restricted access to supported Microsoft Teams domains. This lets the extension read live captions and save them locally without a developer-hosted server. Read the <a href="privacy.html">full privacy policy</a> to learn how records are used and deleted.</p>
+<p>Bug reports and feature requests: <a href="https://github.com/polygoku/teams-caption-recorder/issues">GitHub Issues</a>. Please do not post real meeting transcripts, access tokens, or private organization URLs in public reports.</p>
+</main><footer><div class="container"><span>© 2026 polygoku · Independent Microsoft Teams caption tool</span><span><a href="./">Overview</a> · <a href="privacy.html">Privacy</a> · <a href="https://github.com/polygoku/teams-caption-recorder">Project</a></span></div></footer></body></html>
