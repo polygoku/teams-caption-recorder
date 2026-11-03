@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teams Caption Recorder — Save Microsoft Teams Live Captions Locally</title>
-<meta name="description" content="Save Microsoft Teams live captions as private transcripts in Chrome. Automatic caption enablement, speaker labels, local storage, and TXT, Markdown, JSON, WebVTT exports.">
+<title>Save Microsoft Teams Live Captions to Text | Teams Caption Recorder</title>
+<meta name="description" content="Save Microsoft Teams live captions as local text transcripts. Automatically enable captions after opt-in, preserve speaker labels when shown, and export TXT or Markdown.">
 <meta name="robots" content="index,follow"><link rel="canonical" href="https://polygoku.github.io/teams-caption-recorder/">
-<meta property="og:type" content="website"><meta property="og:title" content="Teams Caption Recorder — Your meeting captions, saved privately">
-<meta property="og:description" content="A silent, independent Chrome extension for locally saving Microsoft Teams live captions with timestamps and speaker labels.">
+<meta property="og:type" content="website"><meta property="og:title" content="Save Teams Live Captions as Private Transcripts | Teams Caption Recorder">
+<meta property="og:description" content="Free Chrome extension to save Microsoft Teams live captions locally, with automatic caption activation, timestamps and transcript exports.">
 <meta property="og:image" content="https://polygoku.github.io/teams-caption-recorder/assets/og.png">
 <meta property="og:url" content="https://polygoku.github.io/teams-caption-recorder/">
 <link rel="icon" type="image/png" href="assets/icon-128.png"><link rel="stylesheet" href="site.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Teams Caption Recorder - Local Notes","applicationCategory":"ProductivityApplication","operatingSystem":"Google Chrome, Microsoft Edge","softwareVersion":"0.3.1","description":"A silent browser extension that saves Microsoft Teams web live captions locally as searchable transcripts, with speaker names and export formats.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Person","name":"polygoku"},"url":"https://polygoku.github.io/teams-caption-recorder/","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Teams Caption Recorder - Local Notes","applicationCategory":"ProductivityApplication","operatingSystem":"Google Chrome, Microsoft Edge","softwareVersion":"0.3.1","description":"Save Microsoft Teams live captions locally as searchable text transcripts, with optional automatic caption activation, speaker labels when displayed, and TXT, Markdown, JSON, or WebVTT export.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Person","name":"polygoku"},"url":"https://polygoku.github.io/teams-caption-recorder/","isAccessibleForFree":true,"installUrl":"https://chromewebstore.google.com/detail/gcnlnfbklpkikbkdkeofapngakipnnfc","softwareHelp":"https://polygoku.github.io/teams-caption-recorder/support.html","inLanguage":"en-US","browserRequirements":"Google Chrome or a compatible Chromium browser"}
 </script>
 </head>
 <body>
-<nav><div class="inner"><a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="38" height="38">Teams Caption Recorder</a><div class="links"><a href="#features">Features</a><a href="#setup">Get started</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></div></nav>
+<nav><div class="inner"><a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="38" height="38">Teams Caption Recorder</a><div class="links"><a href="#features">Features</a><a href="save-teams-captions.html">How-to guide</a><a href="#setup">Get started</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></div></nav>
 <main>
 <section class="hero"><div class="container split"><div>
 <span class="eyebrow">Private meeting transcript extension for Chrome</span>
-<h1>Your Teams live captions, saved. <span style="color:#098175">Nothing announced.</span></h1>
-<p class="lead">Capture the captions Microsoft Teams shows during browser meetings. Automatically enable live captions after opt-in, save the transcript when you leave, and export it when you need notes.</p>
+<h1>Save Microsoft Teams live captions <span style="color:#098175">automatically and privately.</span></h1>
+<p class="lead">Turn Teams live captions into a local, searchable meeting transcript. After opt-in, the free Chrome extension can enable captions, capture available speaker labels and timestamps, and save the text when you leave. No audio recording or in-meeting announcement.</p>
 <div class="buttons"><a class="btn primary" href="https://chromewebstore.google.com/detail/gcnlnfbklpkikbkdkeofapngakipnnfc" id="chrome-web-store-link">Get it from Chrome Web Store</a><a class="btn secondary" href="#setup">How it works</a></div>
 <p class="muted">Free · No account · No microphone recording · No developer cloud storage · Independent of Microsoft</p>
+<p class="muted">New here? <a href="save-teams-captions.html">Read the step-by-step guide to save and export Teams live captions</a>.</p>
 </div>
 <div class="panel" role="img" aria-label="Illustrative example of a transcript with two speakers and timestamps. This is example text, not a real meeting.">
 <div class="mockstatus"><strong>Meeting transcript</strong><span class="pill">Saved locally</span></div>
@@ -48,6 +49,7 @@
 <li><strong>Keep the meeting natural.</strong> The extension quietly tries to enable Teams live captions and captures available caption text. You won't hear an announcement from the extension.</li>
 <li><strong>Leave and export.</strong> Hang up normally. The transcript finishes and stays saved in your browser. Click the extension icon → <em>Open saved transcripts</em> → export TXT, MD, JSON, or WebVTT.</li>
 </ol><p class="muted">Teams creates the live captions; this tool does not perform speech recognition. It cannot recover speech from before captions were turned on. Follow meeting-consent rules before capturing participants' words.</p></div></section>
+<section class="section" style="background:#f3faf8"><div class="container"><span class="eyebrow">Practical tutorial</span><h2>How do I save Teams live captions as a transcript?</h2><p>Install the extension, opt in to automatic capture, join a meeting in the Teams web app, and leave normally when the call ends. The transcript stays in your browser until you export or delete it.</p><div class="buttons"><a class="btn primary" href="save-teams-captions.html">Save and export Teams captions: step-by-step</a><a class="btn secondary" href="support.html">Troubleshooting guide</a></div></div></section>
 <section class="section"><div class="container faq"><span class="eyebrow">Answers before you install</span><h2>Frequently asked questions</h2>
 <article><h3>Does this extension record meeting audio?</h3><p>No. It reads the text already displayed by Microsoft Teams' live captions. It does not access microphone audio, generate speech, or start a native Teams recording.</p></article>
 <article><h3>Will participants see a recording announcement?</h3><p>The extension adds no audio or text announcements to the meeting. Teams may still show its own caption interface or system notifications. Always follow your organization's rules and applicable law.</p></article>
